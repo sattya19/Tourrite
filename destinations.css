@@ -1,0 +1,101 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(benjamin.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    height: 15vh;
+    font-size: 50px;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: grey;
+    text-shadow: 1px 1px black;
+    margin-top: 50px;
+    font-family: 'Stylish', sans-serif;
+}
+
+.maindiv {
+    width: 60%;
+    height: 60vh;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    background-image: url(lavasa.jpeg);
+    background-size: 100% 100%;
+    box-shadow: 1px 2px 10px 5px black;
+    animation: slider 20s infinite linear;
+    border-radius: 25px 25px 25px 25px;
+}
+
+@keyframes slider {
+    0% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(jeremy.jpeg);
+    }
+    20% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(kajjar.jpeg);
+    }
+    40% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(keibul.jpeg);
+    }
+    60% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(lavasa.jpeg);
+    }
+    80% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(spiti.jpeg);
+    }
+    100% {
+        background-image : linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(varkala.jpeg);
+    }
+}
+
+h2 {
+    height: 123vh;
+    margin: 30px 0px 20px 0;
+    font-size: 55px;
+    font-weight: 600;
+    text-shadow: 1px 2px 10px 5px black;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Stylish', sans-serif;
+}
+
+.change_content::after {
+    content: '';
+    animation: changetext 20s infinite linear;
+    color: grey;
+}
+
+@keyframes changetext {
+    0% {
+        content: "Gokarna,karnataka";
+    }
+    20% {
+        content: "khajjar,himachal pradesh";
+    }
+    40% {
+        content: "keibul lamjao,manipur";
+    }
+    60% {
+        content: "lavasa,maharashtra";
+    }
+    80% {
+        content: "spiti valley,himachal pradesh";
+    }
+    100% {
+        content: "varkala,kerala";
+    }
+}

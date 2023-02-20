@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-weight: 400;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.heading {
+    text-align: center;
+    padding: .5rem 1rem;
+    padding-top: 2rem;
+    font-size: 3rem;
+    color: rgb(7, 115, 158);
+    text-transform: uppercase;
+    font-family: cursive;
+}
+
+.title {
+    text-align: center;
+    padding: 0rem 0rem;
+    font-size: 2.5rem;
+    color: rgb(7, 115, 158);
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.feature {
+    background: rgb(43, 61, 61);
+}
+
+.feature .title {
+    color: rgb(7, 115, 158);
+    font-family: cursive;
+}
+
+.feature .card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+
+.feature .card-container .card {
+    height: 28rem;
+    width: 23rem;
+    margin: 2rem 3rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.feature .card-container .card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px 25px 25px 25px;
+}
+
+.feature .card-container .card .info {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    left: 0;
+    background: linear-gradient(transparent, #333b42);
+    padding: 0 2rem;
+    padding-top: 40%;
+}
+
+.feature .card-container .card:hover .info {
+    bottom: 0%;
+}
+
+.feature .card-container .card .info h3 {
+    font-size: 3rem;
+    color: rgb(77, 218, 218);
+}
+
+.feature .card-container .card .info .stars i {
+    font-size: 1rem;
+    color: rgb(5, 108, 204);
+}
+
+.feature .card-container .card .info p {
+    font-size: 1rem;
+    color: rgb(230, 199, 199);
+}
+
+.feature .card-container .card .info .btn {
+    box-shadow: none;
+    color: #eee;
+    background: rgb(5, 108, 204);
+    font-size: 1.5rem;
+    border-radius: 25px 25px 25px 25px;
+}
